@@ -133,7 +133,7 @@ def player_numbers(input)
   p new_array
 
 
- #     end
+end
  #   }
  # end
 
