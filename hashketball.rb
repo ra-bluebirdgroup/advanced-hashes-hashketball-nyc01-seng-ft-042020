@@ -122,8 +122,9 @@ end
          end
          }
       end
-p new_array
-end
+    end
+    puts new_array
+
  #     end
  #   }
  # end
