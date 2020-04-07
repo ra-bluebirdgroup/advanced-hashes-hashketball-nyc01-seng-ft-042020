@@ -124,8 +124,7 @@ all_players.each do |player|
  p result
 end
 #
-# def big_shoe_rebounds
-new_array =[]
+def big_shoe_rebounds
 all_players.each do |player|
         player.select{|key, value|
           if key.to_s == 'shoe'
