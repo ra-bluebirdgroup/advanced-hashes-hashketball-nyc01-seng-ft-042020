@@ -121,7 +121,7 @@ def player_numbers(input)
          end
          }
       end
-    elsif input == game_hash.dig(:home, :team_name)
+    elsif input == game_hash.dig(:away, :team_name)
 
     end
   p new_array
