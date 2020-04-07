@@ -46,7 +46,7 @@ end
 #    end
 #  }
 #   end
-def all_players
+def all_players 
   all_players = game_hash.dig(:home, :players)
 all_players += game_hash.dig(:away, :players)
 end
@@ -110,10 +110,10 @@ end
   # teams << game_hash.dig(:home, :team_name)
   # teams << game_hash.dig(:away, :team_name)
   new_array = []
-  all_players.each do |player|
-       new_array << player.dig{:player_name, :number}
-         end
-
+  # all_players.each do |player|
+  #      new_array << game_hash.dig(:away, :team_name)
+  #        end
+     p all_players
           p new_array
  #     end
  #   }
