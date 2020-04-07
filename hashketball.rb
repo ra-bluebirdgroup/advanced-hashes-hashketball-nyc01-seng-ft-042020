@@ -111,7 +111,7 @@ end
   # away_team << game_hash.dig(:away, :players)
   #
   input = home_team = game_hash.dig(:home, :team_name)
-
+ new_array =[]
   if input == home_team = game_hash.dig(:home, :team_name)
    game_hash.dig(:home, :players).each do |player|
        player.select{|key, value|
