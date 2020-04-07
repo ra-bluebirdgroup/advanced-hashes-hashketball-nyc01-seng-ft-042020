@@ -37,7 +37,7 @@ end
 def num_points_scored(player_search)
    all_players.each do |player|
      player.select{|player_name, name|
-       if name == player_search#.to_s
+       if name == player_search
         player.select{|key, value|
           if key.to_s == 'points'
             return value
