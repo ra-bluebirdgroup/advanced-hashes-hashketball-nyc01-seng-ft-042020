@@ -131,6 +131,7 @@ all_players.each do |player|
           if key.to_s == 'shoe'
             new_array << value
           end
+        }
       end
 
 
