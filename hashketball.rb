@@ -125,5 +125,17 @@ all_players.each do |player|
 end
 #
 # def big_shoe_rebounds
-#
+#   all_players.each do |player| 
+new_array = []
+     player.select{|player_name, name|
+       if name == player_search
+        player.select{|key, value|
+          if key.to_s == 'shoe'
+            new_array << value
+          end
+         }
+      end
+    }
+ end
+
 # end
