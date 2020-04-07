@@ -113,7 +113,7 @@ end
   all_players.each do |player|
        new_array << player.dig{:player_name, :number}
          end
-        }
+        
           p new_array
  #     end
  #   }
