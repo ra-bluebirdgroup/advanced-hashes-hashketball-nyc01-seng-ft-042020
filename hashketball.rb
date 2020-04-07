@@ -140,7 +140,7 @@ all_players.each do |player|
          if value == max && key == :shoe
           player.select{|key, value|
             if key == :rebounds
-              p value
+              return value
             end
           }
          end
