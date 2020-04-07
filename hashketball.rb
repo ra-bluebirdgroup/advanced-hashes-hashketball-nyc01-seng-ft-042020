@@ -109,6 +109,7 @@ def player_numbers(input)
 end
 
 # def player_stats
+result ={}
 player_search = 'Jason Terry'
 new_array = []
 all_players.each do |player|
