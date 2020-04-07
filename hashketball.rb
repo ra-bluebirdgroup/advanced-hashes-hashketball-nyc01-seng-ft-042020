@@ -101,7 +101,7 @@ def team_names
    p teams
 end
 
-# def player_numbers(team_search)
+# def player_numbers(input)
   # teams << game_hash.dig(:home, :team_name)
   # teams << game_hash.dig(:away, :team_name)
 
@@ -110,8 +110,9 @@ end
   # home_team << game_hash.dig(:home, :players)
   # away_team << game_hash.dig(:away, :players)
   #
+  new_array =[]
   input = home_team = game_hash.dig(:home, :team_name)
- new_array =[]
+   
   if input == home_team = game_hash.dig(:home, :team_name)
    game_hash.dig(:home, :players).each do |player|
        player.select{|key, value|
