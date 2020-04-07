@@ -111,7 +111,6 @@ end
 def player_stats(player_search)
 result ={}
 
-new_array = []
 all_players.each do |player|
   player.select{|player_name, name|
     if name == player_search
@@ -121,8 +120,8 @@ all_players.each do |player|
        end
       }
    end
- p result
 
+ p result
 end
 #
 # def big_shoe_rebounds
