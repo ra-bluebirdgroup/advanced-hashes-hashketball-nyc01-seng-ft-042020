@@ -134,15 +134,15 @@ all_players.each do |player|
         }
       end
   max = new_array.max
-  p max  
+  p max
 
   all_players.each do |player|
        player.select{|key, value|
          if value == max
-          player.select{|key, value| 
-            if key == :player_name 
+          player.select{|key, value|
+            if key == :player_name
               p value
-            end  
+            end
           }
          end
         }
