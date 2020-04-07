@@ -136,7 +136,7 @@ all_players.each do |player|
          }
       end
     }
-
+end 
 
 p new_array
 # end
