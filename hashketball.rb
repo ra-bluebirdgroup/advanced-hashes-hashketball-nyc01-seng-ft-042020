@@ -1,9 +1,4 @@
-# Write your code here!
-# require './hashketball.rb'
-
-
 def game_hash
-
 {:home => {
    :team_name => 'Brooklyn Nets',
    :colors => ['black', 'white'],
@@ -30,29 +25,16 @@ def game_hash
 
      }
   }
+  
 end
-# player_search = 'Kemba Walker'
-# all_players = game_hash.dig(:home, :players)
-# all_players += game_hash.dig(:away, :players)
-#
-# all_players.each do |player|
-#   player.select{|player_name, name|
-#     if name == player_search
-#      player.select{|key, value|
-#        if key.to_s == 'points'
-#          puts value
-#        end
-#       }
-#    end
-#  }
-#   end
+
 def all_players
   all_players = game_hash.dig(:home, :players)
 all_players += game_hash.dig(:away, :players)
+
 end
 
- def num_points_scored(player_search)
-
+def num_points_scored(player_search)
    all_players.each do |player|
      player.select{|player_name, name|
        if name == player_search.to_s
@@ -67,7 +49,7 @@ end
 
 end
 
- def shoe_size(player_search)
+def shoe_size(player_search)
    all_players.each do |player|
      player.select{|player_name, name|
        if name == player_search.to_s
@@ -78,7 +60,7 @@ end
          }
       end
     }
-     end
+ end
 
 end
 
@@ -88,117 +70,44 @@ def team_colors(team_search)
 
   if team_search == home_team
       colors = game_hash.dig(:home, :colors).map {|c| c.capitalize }
-
   elsif team_search == away_team
     game_hash.dig(:away, :colors).map {|c| c.capitalize }
     end
+    
 end
 
 def team_names
-teams  = []
-teams << game_hash.dig(:home, :team_name)
-teams <<game_hash.dig(:away, :team_name)
- p teams
+  teams  = []
+    teams << game_hash.dig(:home, :team_name)
+    teams <<game_hash.dig(:away, :team_name)
+    
+p teams
 end
 
 def player_numbers(input)
-  # teams << game_hash.dig(:home, :team_name)
-  # teams << game_hash.dig(:away, :team_name)
-
-  # home_team = []
-  # away_team = []
-  # home_team << game_hash.dig(:home, :players)
-  # away_team << game_hash.dig(:away, :players)
-  #
   new_array =[]
-  # input = home_team = game_hash.dig(:home, :team_name)
 
   if input == game_hash.dig(:home, :team_name)
    game_hash.dig(:home, :players).each do |player|
        player.select{|key, value|
-         if key == :number
-         new_array << value
-         end
+           if key == :number
+           new_array << value
+           end
          }
       end
-    elsif input == game_hash.dig(:away, :team_name)
-      game_hash.dig(:away, :players).each do |player|
+        elsif input == game_hash.dig(:away, :team_name)
+        game_hash.dig(:away, :players).each do |player|
           player.select{|key, value|
             if key == :number
             new_array << value
             end
             }
          end
-    end
+      end
+    
   p new_array
-
-
 end
 
-
- #   }
- # end
-
-# end
-
-# new_array = []
-# team_search = 'Kemba Walker'
-#    game_hash.each{ |teams, properties|
-#       properties.each{ |players, player_info|
-#         if players.assoc(:number) do
-#               new_array << :number
-#                end
-#            end
-#            }
-#           }
-#
-# puts new_array
-
-# new_array = []
-# all_players.each do |player|
-#   player.select{|player_name, number|
-#     if game_hash.assoc(team_search)
-#      player.select{|key, value|
-#        if key.to_s == 'number'
-#         new_array << value
-#         puts new_array
-#        end
-#       }
-#    end
-#  }
-# end
-
-#   if team == team_search.to_s
-#   team.each do |players|
-#
-#   players.select{|key, value|
-#   if  key.to_s == 'number'
-#     puts value
-#   end
-#   }
-#
-# end
-#
-# end
-#
-# end
-
-
-#
-#     team_names.select{|player_name, name|
-#       if team == team_search.to_s
-#        player.select{|key, value|
-#          if key.to_s == 'number'
-#            p value
-#          end
-#         }
-#      end
-#    }
-#     end
-#
-# end
-
-#
 # def player_stats
 #
 # end
