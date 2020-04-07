@@ -100,6 +100,7 @@ def team_names
   #  teams
   #  p teams
   home_team = []
+  away_team = []
   home_team << game_hash.dig(:home, :team_name)
   away_team << game_hash.dig(:away, :team_name)
 
