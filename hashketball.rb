@@ -97,7 +97,7 @@ end
 def team_names
   teams = game_hash.dig(:home, :team_name)
   teams += game_hash.dig(:away, :team_name)
-   teams
+   
    p teams
 end
 
