@@ -138,7 +138,7 @@ all_players.each do |player|
 
   all_players.each do |player|
        player.select{|key, value|
-         if value == max
+         if key == :shoe || value == max
           player.select{|key, value|
             if key == :player_name
               p value
