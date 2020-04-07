@@ -25,7 +25,7 @@ def game_hash
 
      }
   }
-  
+
 end
 
 def all_players
@@ -73,14 +73,14 @@ def team_colors(team_search)
   elsif team_search == away_team
     game_hash.dig(:away, :colors).map {|c| c.capitalize }
     end
-    
+
 end
 
 def team_names
   teams  = []
     teams << game_hash.dig(:home, :team_name)
     teams <<game_hash.dig(:away, :team_name)
-    
+
 p teams
 end
 
@@ -104,7 +104,7 @@ def player_numbers(input)
             }
          end
       end
-    
+
   p new_array
 end
 
