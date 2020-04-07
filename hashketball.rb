@@ -135,5 +135,6 @@ all_players.each do |player|
       end
 
 
-p new_array.max_by
+max = new_array.max
+p max
 # end
