@@ -135,5 +135,5 @@ all_players.each do |player|
       end
 
 
-p new_array.max_by(&:field)
+p new_array.max_by
 # end
