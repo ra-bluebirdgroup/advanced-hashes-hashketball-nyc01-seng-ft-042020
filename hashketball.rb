@@ -95,10 +95,10 @@ def team_colors(team_search)
 end
 
 # def team_names
-  teams = game_hash.dig(:home, :team_name)
-  teams += game_hash.dig(:away, :team_name)
-
-   p teams
+  # teams = game_hash.dig(:home, :team_name)
+  # teams += game_hash.dig(:away, :team_name)
+  #
+  #  p teams
 # end
 
 def player_numbers(input)
@@ -134,6 +134,11 @@ def player_numbers(input)
 
 
 end
+
+teams = game_hash.dig(:home, :team_name)
+teams += game_hash.dig(:away, :team_name)
+
+ p teams
  #   }
  # end
 
