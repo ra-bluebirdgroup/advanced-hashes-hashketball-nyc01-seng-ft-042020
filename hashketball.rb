@@ -111,7 +111,7 @@ end
   # teams << game_hash.dig(:away, :team_name)
   new_array = []
   all_players.each do |player|
-       new_array      << player.dig{:player_name, :number}
+       new_array << player.dig{:player_name, :number}
          end
         }
           p new_array
