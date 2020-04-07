@@ -95,14 +95,10 @@ def team_colors(team_search)
 end
 
 def team_names
-  # teams = game_hash.dig(:home, :team_name)
-  # teams += game_hash.dig(:away, :team_name)
-  #  teams
-  #  p teams
-  home_team = []
-  away_team = []
-  home_team << game_hash.dig(:home, :team_name)
-  away_team << game_hash.dig(:away, :team_name)
+  teams = game_hash.dig(:home, :team_name)
+  teams += game_hash.dig(:away, :team_name)
+   teams
+   p teams
 
   p teams
 end
@@ -111,9 +107,15 @@ end
   # teams << game_hash.dig(:home, :team_name)
   # teams << game_hash.dig(:away, :team_name)
 
+  home_team = []
+  away_team = []
+  home_team << game_hash.dig(:home, :team_name)
+  away_team << game_hash.dig(:away, :team_name)
   input = 'Brooklyn Nets'
+
   new_array = []
-  if
+
+  if input ==
   all_players.each do |player|
        player.select{|key, value|
          if key == :number
