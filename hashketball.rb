@@ -123,7 +123,7 @@ end
          }
       end
     end
-    puts new_array
+    p new_array
 
  #     end
  #   }
