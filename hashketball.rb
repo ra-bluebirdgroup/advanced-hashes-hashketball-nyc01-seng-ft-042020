@@ -129,10 +129,10 @@ end
 #         if players.assoc(:number) do
 #               new_array << :number
 #                end
-#            end 
+#            end
 #            }
 #           }
-# 
+#
 # puts new_array
 
 # new_array = []
