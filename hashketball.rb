@@ -123,8 +123,8 @@ end
          }
       end
     end
-     game_hash.dig(:home, :players).each do |player| 
-       puts player 
+     game_hash.dig(:home, :players).each do |player|
+       puts player
      end 
 
  #     end
