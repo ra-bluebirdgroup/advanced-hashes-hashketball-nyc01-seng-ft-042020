@@ -107,13 +107,13 @@ end
 
   home_team = []
   away_team = []
-  home_team << game_hash.dig(:home, :team_name)
-  away_team << game_hash.dig(:away, :team_name)
+  home_team << game_hash.dig(:home, :players)
+  away_team << game_hash.dig(:away, :players)
   input = 'Brooklyn Nets'
 
   new_array = []
 
-  if input ==
+  if input == 'Brooklyn Nets'
   all_players.each do |player|
        player.select{|key, value|
          if key == :number
