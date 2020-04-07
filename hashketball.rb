@@ -99,8 +99,6 @@ def team_names
   teams += game_hash.dig(:away, :team_name)
    teams
    p teams
-
-  p teams
 end
 
 # def player_numbers(team_search)
