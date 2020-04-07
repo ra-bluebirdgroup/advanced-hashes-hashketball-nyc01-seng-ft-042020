@@ -111,12 +111,12 @@ end
   # teams << game_hash.dig(:away, :team_name)
   new_array = []
   all_players.each do |player|
-       new_array << player.select{|key, value|
-           if key == :number
-                new_array << value 
-
-       }
+       player.select{|key, value|
+         if key == :number
+         new_array << value
          end
+         }
+       end
 p new_array
  #     end
  #   }
