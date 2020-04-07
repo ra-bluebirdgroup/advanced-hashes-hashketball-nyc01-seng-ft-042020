@@ -110,11 +110,10 @@ end
   # teams << game_hash.dig(:home, :team_name)
   # teams << game_hash.dig(:away, :team_name)
   new_array = []
-  # all_players.each do |player|
-  #      new_array << game_hash.dig(:away, :team_name)
-  #        end
-     p all_players
-          p new_array
+  all_players.each do |player|
+       new_array << player.assoc(:number)
+         end
+     
  #     end
  #   }
  # end
