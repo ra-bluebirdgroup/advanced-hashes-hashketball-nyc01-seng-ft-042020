@@ -106,37 +106,35 @@ def team_names
   p teams
 end
 
-def player_numbers(team_search)
+# def player_numbers(team_search)
   # teams << game_hash.dig(:home, :team_name)
   # teams << game_hash.dig(:away, :team_name)
   new_array = []
   all_players.each do |player|
-    player.select{|player_name, number|
-      if game_hash.include?(team_search.to_s)
-       player.select{|key, value|
-         if key.to_s == 'number'
-          new_array << value
-          p new_array
+    player.dig{:player_name, :number}
+          new_array << number
          end
         }
-     end
-   }
- end
+          p new_array
+ #     end
+ #   }
+ # end
 
-end
+# end
 
-new_array = []
-team_search = 'Kemba Walker'
-   game_hash.each{ |teams, properties|
-      properties.each{ |players, player_info|
-        if players.assoc(:number) do
-              new_array << :number
-               end
-           end 
-           }
-          }
+# new_array = []
+# team_search = 'Kemba Walker'
+#    game_hash.each{ |teams, properties|
+#       properties.each{ |players, player_info|
+#         if players.assoc(:number) do
+#               new_array << :number
+#                end
+#            end 
+#            }
+#           }
+# 
+# puts new_array
 
-puts new_array
 # new_array = []
 # all_players.each do |player|
 #   player.select{|player_name, number|
