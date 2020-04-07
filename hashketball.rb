@@ -138,4 +138,5 @@ new_array = []
     }
  end
 
+p new_array
 # end
