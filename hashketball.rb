@@ -145,3 +145,4 @@ all_players.each do |player|
          end
         }
      end
+end 
