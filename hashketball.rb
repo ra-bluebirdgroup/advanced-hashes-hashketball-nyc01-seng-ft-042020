@@ -115,7 +115,7 @@ all_players.each do |player|
     if name == player_search.to_s
      player.select{|key, value|
        if !key.to_s == 'player_name'
-             << value
+             new_array << value
        end
       }
    end
