@@ -110,7 +110,10 @@ end
 # def player_numbers(team_search)
   # teams << game_hash.dig(:home, :team_name)
   # teams << game_hash.dig(:away, :team_name)
-  new_array = []
+
+  input = 'Brooklyn Nets'
+  new_array = [] 
+  if 
   all_players.each do |player|
        player.select{|key, value|
          if key == :number
