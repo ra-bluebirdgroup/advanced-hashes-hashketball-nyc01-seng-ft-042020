@@ -115,7 +115,7 @@ all_players.each do |player|
   player.select{|player_name, name|
     if name == player_search
      player.reject{|key, value|
-        key == :player_name 
+        key == :player_name
       }
        end
       }
