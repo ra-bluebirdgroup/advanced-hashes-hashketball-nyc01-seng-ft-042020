@@ -110,7 +110,7 @@ end
   # home_team << game_hash.dig(:home, :players)
   # away_team << game_hash.dig(:away, :players)
   #
-  # input = home_team = game_hash.dig(:home, :team_name)
+  input = home_team = game_hash.dig(:home, :team_name)
 
   if input == home_team = game_hash.dig(:home, :team_name)
    game_hash.dig(:home, :players).each do |player|
