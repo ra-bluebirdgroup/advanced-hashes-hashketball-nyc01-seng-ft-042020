@@ -109,7 +109,19 @@ def player_numbers(input)
 end
 
 # def player_stats
-#
+new_array = []
+all_players.each do |player|
+  player.select{|player_name, name|
+    if name == player_search.to_s
+     player.select{|key, value|
+       if !key.to_s == 'player_name'
+             << value
+       end
+      }
+   end
+ }
+end
+
 # end
 #
 # def big_shoe_rebounds
