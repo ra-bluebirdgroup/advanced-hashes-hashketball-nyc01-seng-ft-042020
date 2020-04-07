@@ -134,11 +134,10 @@ all_players.each do |player|
         }
       end
   max = new_array.max
-  p max
-
+  
   all_players.each do |player|
        player.select{|key, value|
-         if value == max && key == :shoe 
+         if value == max && key == :shoe
           player.select{|key, value|
             if key == :player_name
               p value
