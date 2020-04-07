@@ -46,7 +46,7 @@ end
 #    end
 #  }
 #   end
-def all_players 
+def all_players
   all_players = game_hash.dig(:home, :players)
 all_players += game_hash.dig(:away, :players)
 end
