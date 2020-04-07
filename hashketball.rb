@@ -52,7 +52,7 @@ end
 def shoe_size(player_search)
    all_players.each do |player|
      player.select{|player_name, name|
-       if name == player_search.to_s
+       if name == player_search#.to_s
         player.select{|key, value|
           if key.to_s == 'shoe'
             return value
