@@ -123,7 +123,7 @@ end
          }
       end
     end
-    p home_team
+    p game_hash.dig(:home, :players)
 
  #     end
  #   }
