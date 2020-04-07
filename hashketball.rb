@@ -123,7 +123,7 @@ end
          }
       end
     end
-    p new_array
+    p home_team
 
  #     end
  #   }
