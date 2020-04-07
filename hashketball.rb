@@ -109,6 +109,7 @@ end
   away_team = []
   home_team << game_hash.dig(:home, :players)
   away_team << game_hash.dig(:away, :players)
+  
   input = 'Brooklyn Nets'
 
   new_array = []
