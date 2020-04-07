@@ -122,7 +122,13 @@ def player_numbers(input)
          }
       end
     elsif input == game_hash.dig(:away, :team_name)
-
+      game_hash.dig(:away, :players).each do |player|
+          player.select{|key, value|
+            if key == :number
+            new_array << value
+            end
+            }
+         end
     end
   p new_array
 
