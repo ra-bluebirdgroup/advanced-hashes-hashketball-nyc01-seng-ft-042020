@@ -115,7 +115,7 @@ end
   new_array = []
 
   if input == 'Brooklyn Nets'
-  home_team.each do |player|
+   game_hash.dig(:home, :players).each do |player|
        player.select{|key, value|
          if key == :number
          new_array << value
@@ -123,8 +123,7 @@ end
          }
       end
     end
-     game_hash.dig(:home, :players).each do |player|
-       puts player
+  p new_array
      end 
 
  #     end
