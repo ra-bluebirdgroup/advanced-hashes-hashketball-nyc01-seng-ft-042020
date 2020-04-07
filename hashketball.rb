@@ -124,7 +124,7 @@ all_players.each do |player|
  p result
 end
 #
-def big_shoe_rebounds 
+def big_shoe_rebounds
   new_array = []
 all_players.each do |player|
         player.select{|key, value|
@@ -146,4 +146,4 @@ all_players.each do |player|
          end
         }
      end
-end 
+end
