@@ -114,7 +114,7 @@ new_array = []
 all_players.each do |player|
   player.select{|player_name, name|
     if name == player_search
-     player.reject{|key, value|
+     result = player.reject{|key, value|
         key.to_s == 'player_name'
       }
        end
