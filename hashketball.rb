@@ -116,7 +116,7 @@ end
          new_array << value
          end
          }
-       end
+      end
 p new_array
  #     end
  #   }
