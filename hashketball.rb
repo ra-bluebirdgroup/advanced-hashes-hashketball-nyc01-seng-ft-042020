@@ -134,11 +134,12 @@ def player_numbers(input)
 
 
 end
-
-teams = game_hash.dig(:home, :team_name)
-teams += game_hash.dig(:away, :team_name)
+teams  = []
+teams << game_hash.dig(:home, :team_name)
+teams <<game_hash.dig(:away, :team_name)
 
  p teams
+
  #   }
  # end
 
